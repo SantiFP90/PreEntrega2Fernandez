@@ -1,0 +1,37 @@
+.containerNavbar {
+  width: 100%;
+  height: 10vh;
+  padding: 10px;
+  background: rgb(242, 28, 28);
+  background: linear-gradient(
+    0deg,
+    rgba(242, 28, 28, 1) 0%,
+    rgba(0, 0, 0, 1) 9%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.containerTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.containerTitle img {
+  width: 8%;
+  margin: 0;
+}
+
+.containerTitleh1 {
+  color: red;
+}

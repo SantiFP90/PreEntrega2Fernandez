@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background: rgb(242, 28, 28);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 28, 28, 1) 0%,
+    rgba(0, 0, 0, 1) 9%
+  );
+  color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h2 {
+  color: red;
+}
+
+.map {
+  border: 0;
+  margin: 4px;
+}
