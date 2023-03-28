@@ -4,8 +4,8 @@
   border-radius: 10px;
 }
 .Button {
-  background-color: red;
+  background-color: red !important;
 }
 .Button:hover {
-  background-color: red;
+  background-color: red !important;
 }

@@ -20,7 +20,10 @@ const Item = ({ element }) => {
           backgroundColor: "white",
         }}
       >
-        <CardMedia sx={{ height: 300, width: 470 }} image={element.img} />
+        <CardMedia
+          sx={{ height: 300, width: 470, borderRadius: "5px" }}
+          image={element.img}
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {element.title}
