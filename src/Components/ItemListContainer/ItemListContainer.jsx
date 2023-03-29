@@ -11,15 +11,34 @@ const ItemListContainer = () => {
 
   const [items, setItems] = useState([]);
 
+  /* useEffect(() => {
+        const promesa = new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos);
+            }, 2000);
+        });
+        promesa.then((respuesta) => {
+            setItems(respuesta);
+        });
+    }, [id]); */
+
+  /* useEffect(() => { // Para subir todos los Productos de mi json local al Firestore
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        arrayProductos.forEach(item => {
+            addDoc(itemsCollection, item);
+        });
+        console.log("Se agregaron los Productos!");
+    }, []); */
+
   useEffect(() => {
-    const itemsCollection = collection(db, "products");
+    const itemsCollection = collection(db, "productos");
 
     getDocs(itemsCollection).then((res) => {
-      console.log(res.docs);
       let products = res.docs.map((product) => {
+        console.log(product.data());
         return {
           ...product.data(),
-          id: product.id,
         };
       });
       console.log(products);
