@@ -28,5 +28,5 @@ ser utilizado de mandera comercial) es la siguiente:
 - Form (Proximamente login)
 
 ```
-git clone
+git clone https://github.com/SantiFP90/ProyectoFinalReactFernandez.git
 ```
