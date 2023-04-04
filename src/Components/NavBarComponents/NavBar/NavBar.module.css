@@ -20,6 +20,15 @@
   gap: 30px;
 }
 
+.navbarLink {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin: 1rem;
+  color: white;
+  font-weight: bolder;
+}
+
 .containerTitle {
   display: flex;
   flex-direction: row;

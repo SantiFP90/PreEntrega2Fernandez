@@ -1,0 +1,51 @@
+.container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.inputs {
+  margin: 1rem;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.titulos {
+  color: red;
+  text-align: center;
+}
+
+.divisor {
+  background-color: red;
+  color: red;
+}
+
+.boton {
+  border-style: none;
+  margin: 4px;
+  background-color: red;
+  color: white;
+  font-size: larger;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.img {
+  margin-top: 5rem;
+  width: 90%;
+  border-radius: 15px;
+}

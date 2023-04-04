@@ -1,0 +1,20 @@
+.botonesmym {
+  margin: 4px;
+  background-color: grey;
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
+  padding: 5px;
+}
+.botonAgregar {
+  margin: 4px;
+  background-color: red;
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+  border-style: none;
+  padding: 5px;
+}

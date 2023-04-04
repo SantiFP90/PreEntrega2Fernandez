@@ -1,19 +1,10 @@
 import React from "react";
 import Item from "../Item/Item";
+import styles from "./ItemList.module.css";
 
 const ItemList = ({ items }) => {
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        display: "flex",
-        width: "100%",
-        minHeight: "100vh",
-        justifyContent: "space-evenly",
-        alignItems: "center",
-        flexWrap: "wrap",
-      }}
-    >
+    <div className={styles.container}>
       {items.map((element) => {
         return <Item key={element.id} element={element} />;
       })}

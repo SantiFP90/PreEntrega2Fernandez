@@ -1,18 +1,13 @@
 import Footer from "./Components/Footer/Footer";
-import ItemCount from "./Components/ItemCount/ItemCount";
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
-import NavBar from "./Components/NavBar/NavBar";
+import ItemListContainer from "./Components/StoreComponents/ItemListContainer/ItemListContainer";
+import NavBar from "./Components/NavBarComponents/NavBar/NavBar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Cart from "./Components/Cart/Cart";
-import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
+import Cart from "./Components/ShoppingCart/Cart/Cart";
+import ItemDetailContainer from "./Components/ProductDetailComponents/ItemDetailContainer/ItemDetailContainer";
 import Form from "./Components/Form/Form";
 import CartContextProvider from "./Context/CartContext";
 
 function App() {
-  const onAdd = (cantidad) => {
-    console.log(`se agrego al carrito ${cantidad} elementos `);
-    console.log("se agrego al carrito " + cantidad + " elemento/s");
-  };
   return (
     <BrowserRouter>
       <CartContextProvider>
